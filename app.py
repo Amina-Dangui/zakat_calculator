@@ -32,7 +32,7 @@ if nisab_choice=='Silver nisab ':
    nisab=nisab_silver
 else:
    nisab=nisab_gold
-if st.button('Calculate'):
+if st.button('Calculate',type='primary'):
    if total_wealth >= nisab:
        zakat=total_wealth * 0.025
        st.success('Your zakat is :' + str(round(zakat,2)) + ' '+ currency)
