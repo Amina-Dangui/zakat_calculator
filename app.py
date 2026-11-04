@@ -22,7 +22,23 @@ gold_price=prices['gold']
 silver_price=prices['silver']
 st.write('Price of 1 gram of gold today:',gold_price,currency)
 st.write('Price of 1 gram of silver today:',silver_price,currency)
-
+gold_value=gold_grams*gold_price 
+silver_value=silver_grams*silver_price
+total_wealth=(gold_value + silver_value + cash + bank + business_goods + stocks_value + investments_value)-debts
+nisab_gold=85* gold_price
+nisab_silver=595* silver_price
+nisab_choice=st.radio('Which nisab do you want to use?',['Silver nisab','Gold nisab'])
+if nisab_choice=='Silver nisab ':
+   nisab=nisab_silver
+else:
+   nisab=nisab_gold
+if st.button('Calculate'):
+   if total_wealth >= nisab:
+       zakat=total_wealth * 0.025
+       st.success('Your zakat is :' + str(round(zakat,2)) + ' '+ currency)
+   else:
+       st.info('Your Wealth is below the nisab. You do not owe zakat this year.')
+  
 
 
   
