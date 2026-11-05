@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 st.set_page_config(page_title='Zakat calculator', page_icon=':crescent_moon:')
-st.title('Zakat calculator')
+st.title(' :crescent_moon: Zakat calculator')
 currency=st.selectbox('Choose your currency',['EUR','USD','XOF','MAD'])
 cash=st.number_input('Cash you have on you or at home ')
 bank=st.number_input('Money in your bank accounts')
