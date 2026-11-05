@@ -28,7 +28,7 @@ total_wealth=(gold_value + silver_value + cash + bank + business_goods + stocks_
 nisab_gold=85* gold_price
 nisab_silver=595* silver_price
 nisab_choice=st.radio('Which nisab do you want to use?',['Silver nisab','Gold nisab'])
-if nisab_choice=='Silver nisab ':
+if nisab_choice=='Silver nisab':
    nisab=nisab_silver
 else:
    nisab=nisab_gold
