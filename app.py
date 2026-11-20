@@ -43,9 +43,13 @@ st.header("Animaux")
 vache=st.number_input("Combien de vaches possédez-vous?")
 hawl_vache=st.radio("Possédez-vous ces vaches depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 chameau=st.number_input("Combien de chameaux possédez-vous?")
+hawl_chameau=st.radio("Possédez-vous ces chameaux depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 mouton_chèvre=st.number_input("Combien de chèvres et moutons possédez-vous")
-
-  
+hawl_mouton_chèvre=st.radio("Possédez-vous ces moutons et chèvres depuis au moins un an (année lunaire)", ["Oui" , "Non"])
+if st.button("Calculer",type="primary")
+  if vache<30 or hawl_vache=="Non":
+    st.info("Pas de zakat sur vos vaches: il faut au moins 30 vaches possédées depuis un an.")
+    
 
 
   
