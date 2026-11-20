@@ -41,6 +41,7 @@ if st.button('Calculate',type='primary'):
        st.info('Your Wealth is below the nisab. You do not owe zakat this year.')
 st.header("Animaux")
 vache=st.number_input("Combien de vaches possédez-vous?")
+hawl_vache=st.radio("Possédez-vous ces vaches depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 chameau=st.number_input("Combien de chameaux possédez-vous?")
 mouton_chèvre=st.number_input("Combien de chèvres et moutons possédez-vous")
 
