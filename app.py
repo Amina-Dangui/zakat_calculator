@@ -58,7 +58,7 @@ if st.button("Calculer",type="primary"):
     vaches_arrondies=(vaches//10)*10
     groupe40=vaches_arrondies//40
     while (vaches_arrondies-groupe40*40)% 30 !=0:
-      groupe40=groupe40-1
+      groupe40=groupe40-
     groupe30=(vaches_arrondies-groupe40*40)//30
     st.success(f"Vaches: Vous devez donner {groupe30} veau(x) d'un an et {groupe40} vache(s) de deux.")
     #Chameaux
@@ -74,7 +74,7 @@ if st.button("Calculer",type="primary"):
     st.success("Chameaux: vous devez donner 4  bêtes. Vous pouvez donner 4 moutons, ou 4 chèvres, ou un mélange des deux (par exemple 2 moutons et 2 chèvres)")
   elif chameaux <=35:
     st.success("Chameaux: vous devez donner une chamelle d'un an")
-    st.caption("Si vous n'avez pas de chamelle d'un an, vous pouvez donner à la place un jeune chameaux male de deux ans.")
+    st.caption("Si vous n'avez pas de chamelle d'un an, vous pouvez donner à la place un jeune chameaux mâle de deux ans.")
   elif chameaux <=45:
     st.success("Chameaux: vous devez donner 1 chamelle de deux ans")
   elif chameaux <= 60:
