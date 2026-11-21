@@ -45,7 +45,7 @@ hawl_vaches=st.radio("Possédez-vous ces vaches depuis au moins un an (année lu
 chameaux=int(st.number_input("Combien de chameaux possédez-vous?"))
 hawl_chameaux=st.radio("Possédez-vous ces chameaux depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 moutons_chèvres=int(st.number_input("Combien de chèvres et moutons possédez-vous"))
-hawl_moutons_chèvres=st.radio("Possédez-vous ces moutons et chèvres depuis au moins un an (année lunaire)", ["Oui" , "Non"])
+hawl_moutons_chevres=st.radio("Possédez-vous ces moutons et chèvres depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 if st.button("Calculer",type="primary"):
   # Vaches
   if vaches<30 or hawl_vaches=="Non":
