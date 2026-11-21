@@ -40,15 +40,42 @@ if st.button('Calculate',type='primary'):
    else:
        st.info('Your Wealth is below the nisab. You do not owe zakat this year.')
 st.header("Animaux")
-vache=st.number_input("Combien de vaches possédez-vous?")
-hawl_vache=st.radio("Possédez-vous ces vaches depuis au moins un an (année lunaire)", ["Oui" , "Non"])
-chameau=st.number_input("Combien de chameaux possédez-vous?")
-hawl_chameau=st.radio("Possédez-vous ces chameaux depuis au moins un an (année lunaire)", ["Oui" , "Non"])
-mouton_chèvre=st.number_input("Combien de chèvres et moutons possédez-vous")
-hawl_mouton_chèvre=st.radio("Possédez-vous ces moutons et chèvres depuis au moins un an (année lunaire)", ["Oui" , "Non"])
+vaches=st.number_input("Combien de vaches possédez-vous?")
+hawl_vaches=st.radio("Possédez-vous ces vaches depuis au moins un an (année lunaire)", ["Oui" , "Non"])
+chameaux=st.number_input("Combien de chameaux possédez-vous?")
+hawl_chameaux=st.radio("Possédez-vous ces chameaux depuis au moins un an (année lunaire)", ["Oui" , "Non"])
+moutons_chèvres=st.number_input("Combien de chèvres et moutons possédez-vous")
+hawl_moutons_chèvres=st.radio("Possédez-vous ces moutons et chèvres depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 if st.button("Calculer",type="primary")
-  if vache<30 or hawl_vache=="Non":
+  if vaches<30 or hawl_vaches=="Non":
     st.info("Pas de zakat sur vos vaches: il faut au moins 30 vaches possédées depuis un an.")
+  elif vaches<=39 and hawl_vaches=="Oui":
+    st.success("Vaches: vous devez donner 1 veau d'un an.")
+  elif vaches<=59 and hawl_vachse=="Oui":
+    st.success("Vaches: vous devez donner 1 vache de deux ans.")
+  else:
+    vaches_arrondies=(vaches//10)*10
+    groupe40=vaches_arrondies//40
+    while (vaches_arrondies-groupe40*40)% 30 !=0:
+      groupe40=groupe40-1
+   groupe30=(vaches_arrondies-groupe40*40)//30
+   st.success(f"Vaches: Vous devez donnez {groupe30} veau(x) d'un an et {groupe_40} vache(s) de deux.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 
 
