@@ -37,7 +37,7 @@ if st.button('Calculate',type='primary'):
    if total_wealth >= nisab:
        zakat=total_wealth * 0.025
        st.success('Your zakat is :' + str(round(zakat,2)) + ' '+ currency)
-   else:£
+   else:
        st.info('Your Wealth is below the nisab. You do not owe zakat this year.')
 st.header("Animaux")
 vaches=int(st.number_input("Combien de vaches possédez-vous?"))
