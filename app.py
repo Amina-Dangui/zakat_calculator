@@ -116,7 +116,7 @@ if st.button("Calculer ma zakat al-fitr",type="primary"):
     st.caption("Soit un sâ , environ 2,5 kilos par personne. A donner aux pauvres, avant prière de l'Aïd.")
 st.header("Récolte")
 nom_recolte=st.text_input("Quel est le nom de votre récolte")
-type_recolte=st.radio("Votre récolte est-elle une céréale ou un légume sec (haricots,niébé....)?,["Oui","Non"], horizontal=True)
+type_recolte=st.radio("Votre récolte est-elle une céréale ou un légume sec (haricots,niébé....)?,["Oui","Non"], horizontal=True")
 type_fruit=="Non"
 if type_recolte=="Non":
    type_fruit=st.radio("Votre récolte est-elle des dattes, des raisins secs, des olives ou du sésame?,["Oui","Non"], horizontal=True)
