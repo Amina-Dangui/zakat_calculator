@@ -40,13 +40,14 @@ if st.button('Calculate',type='primary'):
    else:
        st.info('Your Wealth is below the nisab. You do not owe zakat this year.')
 st.header("Animaux")
-vaches=st.number_input("Combien de vaches possédez-vous?")
+vaches=int(st.number_input("Combien de vaches possédez-vous?"))
 hawl_vaches=st.radio("Possédez-vous ces vaches depuis au moins un an (année lunaire)", ["Oui" , "Non"])
-chameaux=st.number_input("Combien de chameaux possédez-vous?")
+chameaux=int(st.number_input("Combien de chameaux possédez-vous?"))
 hawl_chameaux=st.radio("Possédez-vous ces chameaux depuis au moins un an (année lunaire)", ["Oui" , "Non"])
-moutons_chèvres=st.number_input("Combien de chèvres et moutons possédez-vous")
+moutons_chèvres=int(st.number_input("Combien de chèvres et moutons possédez-vous"))
 hawl_moutons_chèvres=st.radio("Possédez-vous ces moutons et chèvres depuis au moins un an (année lunaire)", ["Oui" , "Non"])
 if st.button("Calculer",type="primary"):
+  # Vaches
   if vaches<30 or hawl_vaches=="Non":
     st.info("Pas de zakat sur vos vaches: il faut au moins 30 vaches possédées depuis un an.")
   elif vaches<=39 and hawl_vaches=="Oui":
@@ -59,7 +60,80 @@ if st.button("Calculer",type="primary"):
     while (vaches_arrondies-groupe40*40)% 30 !=0:
       groupe40=groupe40-1
     groupe30=(vaches_arrondies-groupe40*40)//30
-    st.success(f"Vaches: Vous devez donnez {groupe30} veau(x) d'un an et {groupe40} vache(s) de deux.")
+    st.success(f"Vaches: Vous devez donner {groupe30} veau(x) d'un an et {groupe40} vache(s) de deux.")
+    #Chameaux
+  if chameaux<5 or hawl_chameaux=="Non":
+    st.info("Pas de zakat sur vos chameaux : il faut au moins 5 chameaux possédés depuis un an .")
+  elif  chameaux <= 9:
+    st.success("Chameaux: vous devez donner 1 X :1 mouton ou 1 chévres.")
+  elif chameaux <= 14:
+    st.success("Chameaux: vous devez donner 2x. Vous pouvez donner 2 moutons, ou 2 chèvres, ou 1 mouton et 1 une chèvre")
+  elif chameaux <=19:
+    st.success("Chameaux: vous devez donner 3 x. Vous pouvez donner 3 moutons, ou 3 chèvres, ou un melange des  deux (par exemple 2 moutons et 1 chèvre)")
+  elif chameaux <=24:
+    st.success("Chameaux: vous devez donner 4 X. Vous pouvez donner 4 moutons, ou 4 chèvres, ou un melange des deux (par exemple 2 moutons et 2 chèvres)")
+  elif chameaux <=35:
+    st.success("Chameaux: vous devez donner une chamelle d'un an")
+  elif chameaux <=45:
+    st.success("Chameaux: vous devez donner 1 chamelle de un ans")
+  elif chameaux <= 60:
+    st.success("Chameaux: vous devez donner une chamelle de trois ans")
+  elif chameaux <= 75:
+    st.success("Chameaux: vous devez donner une chamelle de quatre ans")
+  elif chameaux <= 90:
+    st.success("Chameaux: vous devez donner 2 chamelle de deux  ans")
+  elif chameaux <= 120:
+    st.success("Chameaux: vous devez donner 2 chamelle de trois  ans")
+  else:
+    chameaux_arrondies= (chameaux // 10)*10
+    groupe50=chameaux_arrondies // 50
+    while ( chameaux_arrondies-groupe50 * 50) % 40 != 0:
+      groupe5O=groupe50-1
+    groupe40=(chameaux_arrondies-groupe50*50)//40
+    st.success(f"Chameaux: vous devez donner {groupe40} chamelle(s) de deux ans et {groupe50} chamelle(s) de trois ans 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
