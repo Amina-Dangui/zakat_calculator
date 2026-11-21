@@ -119,7 +119,7 @@ nom_recolte=st.text_input("Quel est le nom de votre récolte")
 type_recolte=st.radio("Votre récolte est-elle une céréale ou un légume sec (haricots,niébé....)?,["Oui","Non"], horizontal=True")
 type_fruit=="Non"
 if type_recolte=="Non":
-   type_fruit=st.radio("Votre récolte est-elle des dattes, des raisins secs, des olives ou du sésame?,["Oui","Non"], horizontal=True)
+   type_fruit=st.radio("Votre récolte est-elle des dattes, des raisins secs, des olives ou du sésame?,["Oui","Non"], horizontal=True")
 kilos_recolte=st.number_input("Combien de kilos avez-vous récoltés?", min_value=0.0)
 type_arrosage=st.radio("Comment votre champ a-t-il été arrosé?,["Par la pluie (ou un fleuve)","Par arrosage avec effort ou en payant (pompe,puits...)","les deux à parts égales"])
 
