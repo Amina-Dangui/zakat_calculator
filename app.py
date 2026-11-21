@@ -1,7 +1,16 @@
 import streamlit as st
 import requests
 st.set_page_config(page_title='Zakat calculator', page_icon=':crescent_moon:')
-st.title(' :crescent_moon: Zakat calculator')
+st.markdown("""
+<div style="background: linear-gradient(135deg, #1B7A4A, #C8952C);
+            padding: 30px; border-radius: 20px; text-align: center;
+            margin-bottom: 20px;">
+    <h1 style="color: white; margin: 0;">🌙 Calculatrice des musulmans</h1>
+    <p style="color: white; font-size: 18px; margin: 5px 0 0 0;">
+        Zakat, zakat al-fitr et récoltes, selon l'école malikite
+    </p>
+</div>
+""", unsafe_allow_html=True)
 st.markdown("""
 <style>
 .stTabs [data-baseweb="tab"] {
