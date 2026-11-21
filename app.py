@@ -59,7 +59,7 @@ if st.button("Calculer",type="primary"):
     while (vaches_arrondies-groupe40*40)% 30 !=0:
       groupe40=groupe40-1
     groupe30=(vaches_arrondies-groupe40*40)//30
-    st.success(f"Vaches: Vous devez donnez {groupe30} veau(x) d'un an et {groupe_40} vache(s) de deux.")
+    st.success(f"Vaches: Vous devez donnez {groupe30} veau(x) d'un an et {groupe40} vache(s) de deux.")
 
 
 
