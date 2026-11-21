@@ -92,8 +92,18 @@ if st.button("Calculer",type="primary"):
       groupe5O=groupe50-1
     groupe40=(chameaux_arrondies-groupe50*50)//40
     st.success(f"Chameaux: vous devez donner {groupe40} chamelle(s) de deux ans et {groupe50} chamelle(s) de trois ans")
-
-
+    # Moutons et chèvres 
+  if moutons_chevres < 40 or hawl_moutons_chevres=="Non":
+    st.info("Pas de Zakat sur vos moutons et chèvres : il faut au minimum 40  animaux possédés depuis un an.")
+  elif  moutons_chevres <= 120:
+    st.success("Moutons et chèvres : vous devez donner une bête : 1 mouton ou 1 chèvre.")
+  elif moutons_chevres <=200:
+     st.success("Moutons et chèvres: vous devez donner 2 bêtes: 2 moutons, ou 2 chèvres, ou 1 mouton et 1 chèvre")
+  elif moutons_chevres <= 399:
+     st.success("Moutons et chèvres : vous devez donner 3 bêtes : 3 moutons, ou 3 chèvres, ou un mélange des deux")
+  else:
+     groupe100 = moutons_chevres // 100
+     st.success(f"Moutons et chèvres: vous devez donner {groupe100} bêtes, {groupe100} moutons, ou {groupe100} chèvres, ou un mélange des deux")
 
 
 
