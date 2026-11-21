@@ -114,6 +114,7 @@ if st.button("Calculer ma zakat al-fitr",type="primary"):
     kilos=personnes*2.5
     st.success(f"Vous devez donner {kilos} kilos de {aliment.lower()}.")
     st.caption("Soit un sâ , environ 2,5 kilos par personne. A donner aux pauvres, avant prière de l'Aïd.")
+    
 
 
 
