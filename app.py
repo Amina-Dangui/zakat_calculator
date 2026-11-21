@@ -104,7 +104,23 @@ if st.button("Calculer",type="primary"):
   else:
      groupe100 = moutons_chevres // 100
      st.success(f"Moutons et chèvres: vous devez donner {groupe100} bêtes, {groupe100} moutons, ou {groupe100} chèvres, ou un mélange des deux")
+st.header("Zakat al-fitr")
+personnes=int(st.number_input("Combien de personnes nourrissez-vous, vous compris ?", min_value=0)
+aliment=st.selectbox("Quel aliment allez-vous donner ?" , ["Mil","Riz","Sorgho","Mais","Blé"])
+if st.button("Calculer ma zakat al-fitr",type=primary")
+  if personnes=0:
+     st.info("Indiquez au moins une personne.")
+  else: 
+    kilos=personnes*2.5
+    st.success(f"Vous devez donner {kilos} kilos de {aliment.lower()}.")
+    st.caption("Soit un sa , environ 2,5 kilos par personne. A donner aux pauvres, avant prière de l'Aid.")
+
+
+
+
     
+
+
 
 
 
