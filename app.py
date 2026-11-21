@@ -37,7 +37,7 @@ if st.button('Calculate',type='primary'):
    if total_wealth >= nisab:
        zakat=total_wealth * 0.025
        st.success('Your zakat is :' + str(round(zakat,2)) + ' '+ currency)
-   else:
+   else:£
        st.info('Your Wealth is below the nisab. You do not owe zakat this year.')
 st.header("Animaux")
 vaches=int(st.number_input("Combien de vaches possédez-vous?"))
@@ -91,7 +91,7 @@ if st.button("Calculer",type="primary"):
     while ( chameaux_arrondies-groupe50 * 50) % 40 != 0:
       groupe5O=groupe50-1
     groupe40=(chameaux_arrondies-groupe50*50)//40
-    st.success(f"Chameaux: vous devez donner {groupe40} chamelle(s) de deux ans et {groupe50} chamelle(s) de trois ans 
+    st.success(f"Chameaux: vous devez donner {groupe40} chamelle(s) de deux ans et {groupe50} chamelle(s) de trois ans")
 
 
 
