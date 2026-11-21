@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 st.set_page_config(page_title='Zakat calculator', page_icon=':crescent_moon:')
 st.title(' :crescent_moon: Zakat calculator')
-argent,animaux,fitr,recoltes= st.tabs([💰"Argent","🐄Animaux","🌙Zakat al-fitr",🌾"Récoltes"])
+argent,animaux,fitr,recoltes= st.tabs(["💰Argent","🐄Animaux","🌙Zakat al-fitr","🌾Récoltes"])
 with argent:  
   st.header("Argent")
   currency=st.selectbox('Choose your currency',['EUR','USD','XOF','MAD'])
