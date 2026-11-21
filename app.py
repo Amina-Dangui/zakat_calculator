@@ -121,7 +121,7 @@ type_fruit=="Non"
 if type_recolte=="Non":
    type_fruit=st.radio("Votre récolte est-elle des dattes, des raisins secs, des olives ou du sésame?,["Oui","Non"], horizontal=True")
 kilos_recolte=st.number_input("Combien de kilos avez-vous récoltés?", min_value=0.0)
-type_arrosage=st.radio("Comment votre champ a-t-il été arrosé?,["Par la pluie (ou un fleuve)","Par arrosage avec effort ou en payant (pompe,puits...)","les deux à parts égales"])
+type_arrosage=st.radio("Comment votre champ a-t-il été arrosé?,["Par la pluie (ou un fleuve)","Par arrosage avec effort ou en payant (pompe,puits...)","les deux à parts égales"]")
 
 
 
