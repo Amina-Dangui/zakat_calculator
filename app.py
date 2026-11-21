@@ -104,6 +104,7 @@ if st.button("Calculer",type="primary"):
   else:
      groupe100 = moutons_chevres // 100
      st.success(f"Moutons et chèvres: vous devez donner {groupe100} bêtes, {groupe100} moutons, ou {groupe100} chèvres, ou un mélange des deux")
+    
 
 
 
