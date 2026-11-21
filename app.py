@@ -65,25 +65,26 @@ if st.button("Calculer",type="primary"):
   if chameaux<5 or hawl_chameaux=="Non":
     st.info("Pas de zakat sur vos chameaux : il faut au moins 5 chameaux possédés depuis un an .")
   elif  chameaux <= 9:
-    st.success("Chameaux: vous devez donner 1 X :1 mouton ou 1 chévres.")
+    st.success("Chameaux: vous devez donner 1  bête :1 mouton ou 1 chèvre.")
   elif chameaux <= 14:
-    st.success("Chameaux: vous devez donner 2x. Vous pouvez donner 2 moutons, ou 2 chèvres, ou 1 mouton et 1 une chèvre")
+    st.success("Chameaux: vous devez donner 2  bêtes. Vous pouvez donner 2 moutons, ou 2 chèvres, ou 1 mouton et 1 chèvre")
   elif chameaux <=19:
-    st.success("Chameaux: vous devez donner 3 x. Vous pouvez donner 3 moutons, ou 3 chèvres, ou un melange des  deux (par exemple 2 moutons et 1 chèvre)")
+    st.success("Chameaux: vous devez donner 3  bêtes. Vous pouvez donner 3 moutons, ou 3 chèvres, ou un mélange des  deux (par exemple 2 moutons et 1 chèvre)")
   elif chameaux <=24:
-    st.success("Chameaux: vous devez donner 4 X. Vous pouvez donner 4 moutons, ou 4 chèvres, ou un melange des deux (par exemple 2 moutons et 2 chèvres)")
+    st.success("Chameaux: vous devez donner 4  bêtes. Vous pouvez donner 4 moutons, ou 4 chèvres, ou un mélange des deux (par exemple 2 moutons et 2 chèvres)")
   elif chameaux <=35:
     st.success("Chameaux: vous devez donner une chamelle d'un an")
+    st.caption("Si vous n'avez pas de chamelle d'un an, vous pouvez donner à la place un jeune chameaux male de deux ans.")
   elif chameaux <=45:
-    st.success("Chameaux: vous devez donner 1 chamelle de un ans")
+    st.success("Chameaux: vous devez donner 1 chamelle de deux ans")
   elif chameaux <= 60:
     st.success("Chameaux: vous devez donner une chamelle de trois ans")
   elif chameaux <= 75:
     st.success("Chameaux: vous devez donner une chamelle de quatre ans")
   elif chameaux <= 90:
-    st.success("Chameaux: vous devez donner 2 chamelle de deux  ans")
+    st.success("Chameaux: vous devez donner 2 chamelles de deux  ans")
   elif chameaux <= 120:
-    st.success("Chameaux: vous devez donner 2 chamelle de trois  ans")
+    st.success("Chameaux: vous devez donner 2 chamelles de trois  ans")
   else:
     chameaux_arrondies= (chameaux // 10)*10
     groupe50=chameaux_arrondies // 50
