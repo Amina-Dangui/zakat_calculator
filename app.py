@@ -58,7 +58,7 @@ if st.button("Calculer",type="primary"):
     vaches_arrondies=(vaches//10)*10
     groupe40=vaches_arrondies//40
     while (vaches_arrondies-groupe40*40)% 30 !=0:
-      groupe40=groupe40-
+      groupe40=groupe40-1
     groupe30=(vaches_arrondies-groupe40*40)//30
     st.success(f"Vaches: Vous devez donner {groupe30} veau(x) d'un an et {groupe40} vache(s) de deux.")
     #Chameaux
